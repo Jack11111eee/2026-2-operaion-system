@@ -1,0 +1,27 @@
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "xv6 sleep debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/user/_sleep",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb-multiarch",
+      "miDebuggerArgs": "--nx",
+      "miDebuggerServerAddress": "127.0.0.1:26000",
+      "setupCommands": [
+        {
+          "text": "set architecture riscv:rv64"
+        }
+      ],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "logging": {
+        "engineLogging": true
+      }
+    }
+  ]
+}
